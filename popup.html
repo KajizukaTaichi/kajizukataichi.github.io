@@ -1,16 +1,14 @@
 <!doctype html>
 <html>
-
     <head>
-        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
     </head>
 
     <script>
         const queryString = window.location.search;
         const urlParams = new URLSearchParams(queryString);
-        
-        let key = urlParams.get('msg');
+
+        let key = urlParams.get("msg");
         let message;
 
         if (key !== null) {
@@ -18,21 +16,21 @@
             document.title = key;
         }
 
-        key = urlParams.get('color');
+        key = urlParams.get("color");
         let color;
 
         if (key !== null) {
             color = key;
         }
 
-        key = urlParams.get('back');
+        key = urlParams.get("back");
         let back;
 
         if (key !== null) {
             back = key;
         }
 
-        key = urlParams.get('time');
+        key = urlParams.get("time");
         let time;
 
         if (key !== null) {
@@ -42,9 +40,9 @@
         }
 
         let interval;
-        
-        let addpopup = function() {
-            let popup = document.createElement("div");     
+
+        let addpopup = function () {
+            let popup = document.createElement("div");
 
             let max = document.documentElement.clientHeight - 300;
             popup.style.top = `${Math.floor(Math.random() * max)}px`;
@@ -65,7 +63,7 @@
             button.className = "button";
             button.style.backgroundColor = back;
             button.style.color = color;
-            button.addEventListener("click", function() {
+            button.addEventListener("click", function () {
                 time = time / 2;
                 clearInterval(interval);
                 interval = setInterval(addpopup, time);
@@ -73,29 +71,28 @@
             popup.appendChild(button);
 
             document.body.appendChild(popup);
-            
         };
 
-        document.addEventListener("keydown", function(event) {
+        document.addEventListener("keydown", function (event) {
             event.preventDefault();
         });
-        document.addEventListener("contextmenu", function(event) {
+        document.addEventListener("contextmenu", function (event) {
             event.preventDefault();
         });
 
-        document.addEventListener("DOMContentLoaded", function() {
+        document.addEventListener("DOMContentLoaded", function () {
             interval = setInterval(addpopup, time);
-        })
+        });
     </script>
 
     <style>
-        div, button {
+        div,
+        button {
             background-color: #f0f0f0;
             padding: 10px;
             overflow: hidden;
             backdrop-filter: blur(10px);
             border-radius: 5px;
-           
         }
 
         div {
