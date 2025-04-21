@@ -11,27 +11,32 @@
         <div class="inline-container">
             <div class="inline-item"><img id="icon" src="icon.png" /></div>
             <div class="inline-item">
-                <p id="name">梶塚太智</p>
-                <p>プログラミング初心者</p>
-                <p style="margin-bottom: 5%">言語を自作する程度の能力</p>
-                <p class="degree">
-                    <i class="fas fa-building"></i>
-                    KADOKAWAドワンゴ情報工科学院
-                </p>
-                <p class="degree">
-                    <i class="fas fa-map-marker-alt"></i>
-                    東京 五反田
-                </p>
-                <p class="degree">
-                    <i class="fab fa-github"></i>
-                    <a href="https://github.com/KajizukaTaichi"
-                        >KajizukaTaichi</a
-                    >
-                </p>
+                <div style="margin-bottom: 5%">
+                    <p id="name">梶塚太智</p>
+                    <p>プログラミング初心者</p>
+                </div>
+                <div>
+                    <p class="degree">
+                        <i class="fas fa-building"></i>
+                        KADOKAWAドワンゴ情報工科学院
+                    </p>
+                    <p class="degree">
+                        <i class="fas fa-map-marker-alt"></i>
+                        東京 五反田
+                    </p>
+                    <p class="degree">
+                        <i class="fab fa-github"></i>
+                        <a href="https://github.com/KajizukaTaichi"
+                            >KajizukaTaichi</a
+                        >
+                    </p>
+                </div>
             </div>
         </div>
         <hr />
-        <div id="main"></div>
+        <div id="main">
+            <h1>言語を自作する程度の能力</h1>
+        </div>
     </body>
     <style>
         body {
@@ -44,6 +49,7 @@
 
         h1,
         p {
+            font-weight: lighter;
             margin: 0;
             padding: 0;
         }
@@ -55,6 +61,7 @@
         }
 
         #main {
+            padding-top: 5vh;
             padding-left: 5vw;
             padding-right: 5vw;
         }
@@ -65,6 +72,7 @@
         }
 
         .inline-item {
+            position: relative;
             font-size: 100px;
             padding: 10px;
         }
