@@ -93,5 +93,20 @@
         .inline-item p {
             font-size: 30%;
         }
+
+        @media (prefers-color-scheme: light) {
+            body {
+                background-color: #ffffff;
+                color: #000000;
+            }
+        }
+
+        /* ダークモード用のスタイル */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #121212;
+                color: #ffffff;
+            }
+        }
     </style>
 </html>
