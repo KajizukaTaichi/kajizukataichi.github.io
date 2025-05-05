@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+    <head></head>
+    <body>
+        <span id="anarchism">Ⓐ</span>
+        <div id="chorus"></div>
+    </body>
+
+    <script>
+        const lyrics = [
+            "Это есть наш последний и решительный бой;",
+            "С Интернационалом воспрянет род людской!",
+        ];
+        const sleep = (time) =>
+            new Promise((resolve) => setTimeout(resolve, time));
+
+        (async function () {
+            const chorusElement = document.getElementById("chorus");
+            chorusElement.innerHTML = "";
+            for (line of lyrics) {
+                const lineElement = document.createElement("p");
+                lineElement.classList.add("chorus-line");
+                chorusElement.appendChild(lineElement);
+
+                for (word of line.split()) {
+                    const wordElement = document.createElement("span");
+                    wordElement.classList.add("chorus-word");
+                    lineElement.appendChild(wordElement);
+                    for (char of word) {
+                        wordElement.textContent += char;
+                        await sleep(100);
+                    }
+                    await sleep(200);
+                }
+            }
+        })();
+    </script>
+
+    <style>
+        body {
+            height: 100vh;
+            margin: 0;
+            padding: 5vw;
+            overflow: hidden;
+            font-family: Impact, Haettenschweiler, "Arial Narrow Bold",
+                sans-serif;
+            background: linear-gradient(135deg, red, red, black, black, black);
+        }
+        #anarchism {
+            position: absolute;
+            font-size: 300px;
+            color: white;
+            right: 5%;
+            bottom: 5%;
+        }
+        .chorus-line {
+            margin: 0;
+            padding: 0;
+            text-align: right;
+            font-size: 50px;
+            font-weight: bold;
+            color: white;
+        }
+        .chorus-word {
+            padding-right: 10px;
+        }
+        .chorus-word:hover {
+            text-shadow: 0 0 10px white;
+        }
+    </style>
+</html>
