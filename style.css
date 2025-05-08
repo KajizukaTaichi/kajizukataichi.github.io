@@ -1,4 +1,7 @@
 body {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
     font-size: large;
 }
 i {
@@ -79,6 +82,7 @@ p {
 }
 
 .gallery {
+    margin-bottom: 10%;
     width: 100%;
     text-align: center;
     h2 {
@@ -127,11 +131,14 @@ p {
         aspect-ratio: 4/3;
         border-radius: 16px 0 0 16px;
     }
-    .img-5 {
-        width: 68%;
-        aspect-ratio: 16/9;
-        border-radius: 16px;
-    }
+}
+
+footer {
+    width: 100vw;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @keyframes rotate {
