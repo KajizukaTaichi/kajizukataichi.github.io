@@ -9,7 +9,7 @@
     </head>
     <body>
         <div class="top-container">
-            <div class="top-item"><img id="icon" src="icon.png" /></div>
+            <div class="top-item"><img id="icon" src="static/icon.png" /></div>
             <div class="top-item">
                 <div style="margin-bottom: 10px">
                     <p id="name">梶塚太智</p>
@@ -41,8 +41,7 @@
         </div>
         <hr />
         <div id="main">
-            <h1>プロジェクト一覧</h1>
-            <br />
+            <h1 class="title">プロジェクト一覧</h1>
 
             <div id="repo-container">
                 <div class="repo">
@@ -116,6 +115,13 @@
                     </p>
                 </div>
             </div>
+
+            <h1 class="title">GALLERY</h1>
+
+            <div id="gallery-container">
+                <img class="img-1" src="static/award.jpg" />
+                <img class="img-2" src="static/ipsj.jpg" />
+            </div>
         </div>
     </body>
     <style>
@@ -125,6 +131,24 @@
         i {
             font-size: 100%;
             color: grey;
+        }
+
+        .title {
+            padding-top: 5%;
+            padding-bottom: 2%;
+        }
+
+        #gallery-container {
+            display: flex;
+            gap: 50px;
+            .img-1 {
+                border-radius: 50px;
+                width: 50%;
+            }
+            .img-2 {
+                width: 30%;
+                border-radius: 50px;
+            }
         }
 
         h1,
