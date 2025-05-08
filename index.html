@@ -151,10 +151,9 @@
             border-radius: 50%;
             width: 300px;
             height: 300px;
-        }
-
-        #icon:hover {
-            animation: rotate 5s linear infinite;
+            &:hover {
+                animation: rotate 5s linear infinite;
+            }
         }
 
         #main {
@@ -193,14 +192,12 @@
             border-radius: 10px;
             border: 1px solid grey;
             padding: 30px;
-        }
-
-        .repo:hover {
-            box-shadow: 0 0 10px grey;
-        }
-
-        .repo a {
-            color: unset;
+            a {
+                color: unset;
+            }
+            &:hover {
+                box-shadow: 0 0 10px grey;
+            }
         }
 
         @keyframes rotate {
@@ -225,7 +222,6 @@
             }
         }
 
-        /* ダークモード用のスタイル */
         @media (prefers-color-scheme: dark) {
             body {
                 background-color: #121212;
