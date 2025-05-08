@@ -117,10 +117,20 @@
             </div>
 
             <h1 class="title">GALLERY</h1>
-
-            <div id="gallery-container">
-                <img class="img-1" src="static/award.jpg" />
-                <img class="img-2" src="static/ipsj.jpg" />
+            <div class="gallery">
+                <div class="gallery-content">
+                    <div class="gallery-item gallery-item__1">
+                        <img class="img-1" src="static/presen.jpg" alt="" />
+                        <img class="img-2" src="static/book.png" alt="" />
+                    </div>
+                    <div class="gallery-item gallery-item__2">
+                        <img class="img-3" src="static/lubuntu.png" alt="" />
+                        <img class="img-4" src="static/ipsj.jpg" alt="" />
+                    </div>
+                    <div class="gallery-item gallery-item__3">
+                        <img class="img-5" src="img/meirin.jpeg" alt="" />
+                    </div>
+                </div>
             </div>
         </div>
     </body>
@@ -213,6 +223,63 @@
             }
             &:hover {
                 box-shadow: 0 0 10px grey;
+            }
+        }
+
+        .gallery {
+            width: 100%;
+            padding-top: 120px;
+            text-align: center;
+            h2 {
+                font-size: 48px;
+                color: #ff8800;
+            }
+        }
+
+        .gallery-content {
+            margin-top: 60px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .gallery-item {
+            display: flex;
+            gap: 2%;
+            align-items: end;
+            img {
+                width: 49%;
+                aspect-ratio: 4/3;
+                object-fit: cover;
+            }
+            &.gallery-item__3 {
+                justify-content: center;
+                margin-top: 24px;
+            }
+            .img-1 {
+                width: 65%;
+                aspect-ratio: 16/9;
+                border-radius: 0 16px 16px 0;
+            }
+            .img-2 {
+                width: 20%;
+                aspect-ratio: 3/4;
+                border-radius: 16px;
+            }
+            .img-3 {
+                width: 45%;
+                aspect-ratio: 15/9;
+                border-radius: 0 16px 16px 0;
+            }
+            .img-4 {
+                width: 60%;
+                aspect-ratio: 4/3;
+                border-radius: 16px 0 0 16px;
+            }
+            .img-5 {
+                width: 68%;
+                aspect-ratio: 16/9;
+                border-radius: 16px;
             }
         }
 
