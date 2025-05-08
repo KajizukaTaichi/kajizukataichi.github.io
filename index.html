@@ -8,9 +8,9 @@
         />
     </head>
     <body>
-        <div class="inline-container">
-            <div class="inline-item"><img id="icon" src="icon.png" /></div>
-            <div class="inline-item">
+        <div class="top-container">
+            <div class="top-item"><img id="icon" src="icon.png" /></div>
+            <div class="top-item">
                 <div style="margin-bottom: 10px">
                     <p id="name">梶塚太智</p>
                     <p>プログラミング初心者</p>
@@ -164,22 +164,22 @@
             padding-right: 5vw;
         }
 
-        .inline-container {
+        .top-container {
             display: flex;
             height: max-content;
         }
 
-        .inline-item {
+        .top-item {
             position: relative;
             font-size: 100px;
             padding: 10px;
         }
 
-        .inline-item #name {
+        .top-item #name {
             font-size: 70%;
         }
 
-        .inline-item .degree {
+        .top-item .degree {
             font-size: 20%;
             color: grey;
         }
@@ -188,7 +188,7 @@
             color: grey;
         }
 
-        .inline-item p {
+        .top-item p {
             font-size: 30%;
         }
 
@@ -217,7 +217,7 @@
         }
 
         @media (max-width: 850px) {
-            .inline-container {
+            .top-container {
                 flex-direction: column;
             }
         }
