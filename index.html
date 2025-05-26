@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <title>梶塚太智のホームページ</title>
+        <meta charset="utf-8" />
+    </head>
+
+    <body>
+        <nav id="nav">
+            <a href="https://github.com/KajizukaTaichi/mystia">GitHub</a>
+        </nav>
+        <div id="top">
+            <h1>梶塚太智</h1>
+            <p>クソ雑魚プログラマー</p>
+        </div>
+
+        <div id="about">
+            <h2>About Me</h2>
+            <p>
+                ども、言語ばっかり作ってる人です。それ以外マジで何もできない雑魚です。WASM推しです。
+                前はインタプリタ中心でしたが、最近コンパイラ自作にも手を出し始めました。
+            </p>
+
+            <h3>プロフィール</h3>
+            <table>
+                <tr>
+                    <td>種族</td>
+                    <td>人間</td>
+                </tr>
+                <tr>
+                    <td>能力</td>
+                    <td>言語を自作する程度の能力</td>
+                </tr>
+                <tr>
+                    <td>所属</td>
+                    <td>KADOKAWAドワンゴ情報工科学院 高等部1年生</td>
+                </tr>
+                <tr>
+                    <td>好きな言語</td>
+                    <td>Rust</td>
+                </tr>
+                <tr>
+                    <td>嫌いな言語</td>
+                    <td>Python</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="works">
+            <h2>Works</h2>
+            <div class="work">
+                <h3>
+                    <a href="https://kajizukataichi.github.io/mystia">Mystia</a>
+                </h3>
+                <p>WASMにコンパイルする静的型付け言語。最新作</p>
+            </div>
+            <div class="work">
+                <h3>
+                    <a href="https://kajizukataichi.github.io/MLtalk">MLtalk</a>
+                </h3>
+                <p>
+                    すらすらシームレスに書きやすい柔軟な動的型付けML系言語です
+                </p>
+            </div>
+        </div>
+    </body>
+
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            h2 {
+                border-bottom: 2px dashed lightblue;
+            }
+            #nav {
+                background-color: black;
+                color: white;
+                padding: 1rem;
+                text-align: left;
+                a {
+                    color: grey;
+                }
+            }
+            #top {
+                padding: 10px;
+                text-align: center;
+            }
+            #about {
+                padding: 100px;
+                table td {
+                    padding: 5px;
+                    border-bottom: 1px dashed lightblue;
+                }
+            }
+            #works {
+                padding: 100px;
+                .work {
+                    border: 1px solid #ccc;
+                    border-radius: 10px;
+                    margin: 20px;
+                    padding: 10px;
+                    padding-left: 30px;
+                }
+            }
+        }
+    </style>
+</html>
