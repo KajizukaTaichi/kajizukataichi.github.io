@@ -8,7 +8,7 @@ body {
         padding: 0;
         margin: 0;
     }
-    #main-visual #name-plate {
+    #name-plate {
         font-size: 15vh;
         position: absolute;
         right: 0;
@@ -29,6 +29,24 @@ body {
             padding: 1vh;
             padding-right: 5vw;
             border-bottom: 0.3vh dashed grey;
+        }
+    }
+    #mystia {
+        font-size: 5vh;
+        padding: 2vw;
+        #title {
+            font-size: 8vh;
+        }
+        #card {
+            margin: 2vh;
+            border-radius: 3vh;
+            border: 0.1vh solid grey;
+            box-shadow: 0.1vh 0.1vh 0.5vh grey;
+            padding-left: 2vw;
+            li {
+                padding: 1vh;
+                list-style-type: circle;
+            }
         }
     }
     .large-screen {
