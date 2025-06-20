@@ -42,7 +42,9 @@
             <div id="mystia">
                 <p id="title">WASMにコンパイルする言語を作ってるんだぜ</p>
                 <div id="card">
-                    <h3>Mystia</h3>
+                    <a href="https://kajizukataichi.github.io/mystia/">
+                        <h3>Mystia</h3>
+                    </a>
                     <ul>
                         <li>静的型付けで安全</li>
                         <li>Rustライクな記述</li>
@@ -50,6 +52,23 @@
                         <li>JavaScriptとの連携</li>
                         <li>アプリ開発も可能</li>
                     </ul>
+                    <pre>
+load to_str(n: num): str;
+load print(n: str): void;
+
+let fizzbuzz(n: int) = {
+    if n % 15 == 0 then "FizzBuzz"
+    else if n % 3 == 0 then "Fizz"
+    else if n % 5 == 0 then "Buzz"
+    else n as str
+};
+
+let i = 1;
+while i <= 100 loop {
+    i.fizzbuzz().print();
+    let i + 1
+}
+                    </pre>
                 </div>
             </div>
         </div>
