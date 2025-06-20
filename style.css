@@ -38,14 +38,33 @@ body {
             font-size: 8vh;
         }
         #card {
+            height: 65vh;
+            width: 90vw;
+            position: relative;
             margin: 2vh;
             border-radius: 3vh;
             border: 0.1vh solid grey;
             box-shadow: 0.1vh 0.1vh 0.5vh grey;
             padding-left: 2vw;
+            padding-right: 2vw;
             li {
                 padding: 1vh;
                 list-style-type: circle;
+            }
+            pre {
+                font-size: 3.5vh;
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 40vw;
+                height: 65vh;
+                border-style: none;
+            }
+            a {
+                color: inherit;
+                &:hover {
+                    color: blueviolet;
+                }
             }
         }
     }
