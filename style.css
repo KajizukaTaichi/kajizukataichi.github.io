@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
+    p {
+        padding: 0;
+        margin: 0;
+    }
+    #main-visual #name-plate {
+        font-size: 15vh;
+        position: absolute;
+        right: 0;
+        top: 40vh;
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            padding-right: 2vw;
+            text-align: right;
+        }
+    }
+    #about {
+        font-size: 5vh;
+        padding: 2vw;
+        h1 {
+            font-size:;
+        }
+        table td {
+            padding: 1vh;
+            padding-right: 5vw;
+            border-bottom: 0.3vh dashed grey;
+        }
+    }
+    .large-screen {
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        color: rgba(255, 255, 255, 0.8);
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(10%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.animate-fadein {
+    animation: fadeIn 1s ease-out forwards;
+}
